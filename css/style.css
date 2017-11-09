@@ -62,3 +62,89 @@ linki a {
 div:target {
    border: 1px solid black;
 }
+
+/*:lang - okresla wyglad elementu o podanym atrybucie lang w HTML */
+div:lang(pl) {
+    border: 3px solid blue;
+}
+
+/*:first-child - okresla wyglad pierwszego zagniezdzonego elementu */
+#childs  ul li:first-child {
+    font-size: 30px;
+    color: red;
+}
+
+/*:last-child - okresla wyglad ostatniego zagniezdzonego elementu */
+#childs ul li:last-child {
+    background-color: yellow;
+}
+
+/*:only-child - okresla wyglad JEDYNEGO elementu swojego rodzica */
+#before_after p:only-child {
+    color: violet;
+}
+
+/*:empty - lapie element, ktory nie ma zawartosci (nic zagniezdzonego, lacznie z tekstem) */
+#childs span:empty {
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+
+/* :nth-child() / :nth-last-child() - wyszukuja dzieci wedle podanego wzoru. :nth-child() rozpoczyna liczenie od pierwszego do ostatniego dziecka, natomiast :nth-last-child() rozpoczyna liczenie od ostatniego do pierwszego dziecka. Ilosc elementow ma znaczenie */
+/*
+#childs ul li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+#childs ul li:nth-child(5) {
+    background-color: green;
+}
+*/
+
+#childs ul li:nth-child(4n+1) {
+    background-color: green;
+}
+
+/*selektory atrybutow */
+/*po nazwie atrybutu */
+#atrybuty input[type] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*po okreslonej wartosci atrybutu */
+#atrybuty input[type="tel"] {
+    border: 5px solid red;
+}
+/*po wystepujacej wartosci atrybutu, nalezy podac DOKLADNA WARTOSC */
+#atrybuty input[type~="opis"] {
+    border: 5px solid black;
+}
+/*po wystepujacej wartosci atrybutu, szuka podanego przez nas ciagu znakow */
+#atrybuty input[type*="opis"] {
+    border: 5px solid violet;
+}
+
+/*po wartosci atrybutu, ktora zaczyna sie od podanego ciagu znakow */
+#atrybuty input[type^="pierwszy"] {
+    border: 5px solid red;
+}
+
+/*po wartosci atrybutu, ktory konczy sie na podany ciag znakow */
+
+#atrybuty input[type$="p"] {
+    border: 5px solid red;
+}
+
+#inline-block {
+    text-align: center;
+}
+
+#inline-block div {
+    display: inline-block;
+    width: 50%;
+    background: red;
+}
