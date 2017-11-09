@@ -1,0 +1,64 @@
+/*before i after NIE ISTNIEJA w dokumencie, jako programisci jestesmy w stanie dodac taki element. Aby utworzyc before i after MUSIMY ustawic wlasciwosci CONTENT (moze byc pusta) np: content: ' ' ; */
+
+/*before i after naleza do elementu */
+
+#before_after p::before {
+    content: 'P ';
+    color: red;
+}
+
+#before_after p::after {
+    content: 'P ';
+    color: red;
+}
+
+/*::first-letter zmienia pierwsza litere w danym elemencie */
+
+#before_after p::first-letter {
+    color: yellow;
+    font-weight: bold;
+}
+
+/*:: first-line zmienia wyglada pierwszej linii tekstu */
+
+#before_after p::first-line {
+    font-size: 20px;
+    color: red;
+}
+
+/*pseudo klasy linkow */
+linki a {
+    text-decoration: none;
+}
+
+/*:link - nieodwiedzony */
+#linki a:link {
+    color: hotpink;
+    font-style: italic;
+}
+
+/*visited - odwiedzony */
+#linki a:visited {
+    color: grey;
+}
+
+/*:hover - po najechaniu myszka */
+#linki a:hover {
+    border: 1px solid black;
+}
+
+/*:active - od momentu klikniecia do momentu puszczenia LPM */
+#linki a:active {
+    color: red;
+    font-weight: bold;
+}
+
+/*:focus - najczesciej uzywana do pol formularza (input). Odpalane, kiedy pole formularza jest aktywne */
+#inputy input:focus {
+    border: 3px solid black;
+}
+
+/*:target - okresla wyglad elementu, do ktorego prowadzi KOTWICA */
+div:target {
+   border: 1px solid black;
+}
