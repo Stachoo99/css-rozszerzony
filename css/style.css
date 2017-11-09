@@ -214,4 +214,11 @@ div:lang(pl) {
     background-color: red;
     width: 800px;
 }
+/*ustawienia tla */
+#tlo {
+    height: 800px;
+    background-image: url(http://dinoanimals.pl/wp-content/uploads/2015/01/Kot_zwislouchy_1-588x490.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
