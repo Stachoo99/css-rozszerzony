@@ -150,7 +150,7 @@ div:lang(pl) {
 }
 
 #main-nav {
-    position: fixed;ś
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
@@ -221,5 +221,8 @@ div:lang(pl) {
     background-repeat: no-repeat;
     background-position: center;
 /*    najlepiej stosowac pozycje background-position: center center; */
+    
+    background: url(http://dinoanimals.pl/wp-content/uploads/2015/01/Kot_zwislouchy_1-588x490.jpg) no-repeat;
+    background-size: cover;
 }
 
