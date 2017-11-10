@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /*before i after NIE ISTNIEJA w dokumencie, jako programisci jestesmy w stanie dodac taki element. Aby utworzyc before i after MUSIMY ustawic wlasciwosci CONTENT (moze byc pusta) np: content: ' ' ; */
 
 /*before i after naleza do elementu */
@@ -225,4 +229,23 @@ div:lang(pl) {
     background: url(http://dinoanimals.pl/wp-content/uploads/2015/01/Kot_zwislouchy_1-588x490.jpg) no-repeat;
     background-size: cover;
 }
+
+#overflow {
+    width: 25%;
+    height: 400px;
+    border: 1px solid black;
+    overflow-x: scroll;
+}
+
+#overflow .inner {
+    width: 300%;
+/*    na gorze podana sztywna wysokosc w pikselach wiec ma z czego policzyc */
+    height: 100%;
+}
+
+#overflow p {
+    margin: 0;
+}
+
+
 
